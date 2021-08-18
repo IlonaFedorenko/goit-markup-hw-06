@@ -58,28 +58,30 @@
                     <ul class="forms-list">
                         <li class="forms-item">
                              <label for="user-name">Имя</label>
-                             <input type="text" name="user-name" id="user-name">
+                             <input type="text" name="user-name" id="user-name" class="forms-line">
                              <svg class="forms-icons"><use href="./images/symbol-defs.svg#icon-personamodalka"></use></svg>
                         </li>
                         <li class="forms-item">
                              <label for="telephone">Телефон</label>
-                             <input type="tel" name="telephone" id="telephone">
+                             <input type="tel" name="telephone" id="telephone"  class="forms-line">
                               <svg class="forms-icons"><use href="./images/symbol-defs.svg#icon-telmodalka"></use></svg>
                         </li>
                         <li class="forms-item">
                              <label for="mail">Почта</label>
-                             <input type="email" name="mail" id="mail">
+                             <input type="email" name="mail" id="mail"  class="forms-line">
                               <svg class="forms-icons"><use href="./images/symbol-defs.svg#icon-mailmodalka"></use></svg>
                         </li>
                         <li class="forms-item">
                              <label for="coment">Коментарий</label>
-                             <textarea name="coment" rows="5" placeholder="Введите текст" id="coment"></textarea>
+                             <textarea name="coment" rows="6" placeholder="Введите текст" id="coment" class="forms-line coments"></textarea>
                         </li>
                     </ul>
                     <ul class="forms-container-element">
                         <li class="forms-element">
-                             <input type="checkbox" name="Terms-use" value="Terms-use" id="Terms-use">
-                             <label for="Terms-use"> Соглашаюсь с рассылкой и принимаю<span class="terms-text"> Условия договора </span></label>
+                                 <label for="Terms-use">
+                                 <input type="checkbox" name="Terms-use" value="Terms-use" id="Terms-use" class="checkbox" > 
+                                 <svg class="checkbox-icon"><use href="./images/symbol-defs.svg#icon-iconcheck"></use></svg>
+                                 Соглашаюсь с рассылкой и принимаю<a href="" class="terms-text"> Условия договора </a></label>
                         </li>
                         <li class="forms-element">
                             <button type="submit" class="button-sumbit">Отправить</button>
