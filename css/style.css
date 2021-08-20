@@ -28,8 +28,11 @@ h2,
 h3,
 ul,
 p {
-  padding: 0;
   margin: 0;
+}
+ul,
+p {
+  padding: 0;
   list-style: none;
 }
 
@@ -146,6 +149,9 @@ p {
 .heading-footer {
   margin-bottom: 20px;
   color: var(--second-color-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
 }
 .nav-link.current::after {
   content: "";
@@ -305,7 +311,6 @@ p {
   line-height: 1.8;
   letter-spacing: 0.06em;
   cursor: pointer;
-  margin-left: 120px;
 }
 /* Оформление секции герой*/
 .hero {
@@ -586,9 +591,6 @@ p {
 }
 /* Оформление в модальном окне формы */
 .forms-item input {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   height: 40px;
   font-size: 14px;
   line-height: 1.14;
@@ -611,54 +613,50 @@ p {
   margin-bottom: 4px;
 }
 .forms-title {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
 .forms-container {
-  width: 448px;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+  padding: 40px;
 }
 .forms-item {
-  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.forms-list {
-  margin-bottom: 20px;
+.forms-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 .forms-element:not(:last-child) {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .forms-icons {
   position: absolute;
   width: 18px;
   height: 18px;
   left: 12px;
-  top: 30px;
+  top: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--second-color-white);
 }
-.forms-item:hover .forms-icons,
 .forms-item:focus .forms-icons {
   fill: var(--accent-color);
 }
-.forms-item:hover .forms-line,
 .forms-item:focus .forms-line {
   border-color: var(--accent-color);
 }
-.forms-element {
-  display: block;
+.forms-container-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 .terms-text {
   color: var(--accent-color);
