@@ -53,40 +53,37 @@
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                  </svg>
                  </button>
-                 <form class="forms-container">
-                    <h2 class="forms-title">Оставьте свои данные, мы вам перезвоним</h2>
-                    <div class="forms-list">
-                        <div class="forms-item">
-                             <label for="user-name">Имя</label>
-                             <input type="text" name="user-name" id="user-name" class="forms-line">
-                             <svg class="forms-icons"><use href="./images/symbol-defs.svg#icon-personamodalka" ></use></svg>
-                        </div>
-                        <div class="forms-item">
-                             <label for="telephone">Телефон</label>
-                             <input type="tel" name="telephone" id="telephone"  class="forms-line">
-                              <svg class="forms-icons" width="12" height="12"><use href="./images/symbol-defs.svg#icon-telmodalka"></use></svg>
-                        </div>
-                        <div class="forms-item">
-                             <label for="mail">Почта</label>
-                             <input type="email" name="mail" id="mail"  class="forms-line">
-                              <svg class="forms-icons"><use href="./images/symbol-defs.svg#icon-mailmodalka"></use></svg>
-                        </div>
-                        <div class="forms-item">
-                             <label for="coment">Коментарий</label>
-                             <textarea name="coment" rows="7" placeholder="Введите текст" id="coment" class="forms-line coments"></textarea>
-                        </div>
-                    <div class="forms-container-element">
-                        <div class="forms-element">
-                                 <label for="Terms-use">
-                                 <input type="checkbox" name="Terms-use" value="Terms-use" id="Terms-use" class="checkbox" > 
-                                 <svg class="checkbox-icon"><use href="./images/symbol-defs.svg#icon-iconcheck"></use></svg>
-                                 Соглашаюсь с рассылкой и принимаю<a href="" class="terms-text"> Условия договора </a></label>
-                        </div>
-                        <div class="forms-element">
-                            <button type="submit" class="button-sumbit">Отправить</button>
-                        </div>
-                    </div>
-                    </div>
+                <form class="forms-container">
+                     <h2 class="forms-title">Оставьте свои данные, мы вам перезвоним</h2>
+                     <label for="user-name" class="forms-item">Имя
+                         <input type="text" name="user-name" id="user-name" class="forms-line">
+                         <svg class="forms-icons">
+                             <use href="./images/symbol-defs.svg#icon-personamodalka"></use>
+                         </svg>
+                     </label>
+                     <label for="telephone" class="forms-item">Телефон
+                         <input type="tel" name="telephone" id="telephone" class="forms-line">
+                         <svg class="forms-icons" width="12" height="12">
+                             <use href="./images/symbol-defs.svg#icon-telmodalka"></use>
+                         </svg>
+                     </label>
+                     <label for="mail" class="forms-item">Почта
+                         <input type="email" name="mail" id="mail" class="forms-line">
+                         <svg class="forms-icons">
+                             <use href="./images/symbol-defs.svg#icon-mailmodalka"></use>
+                         </svg>
+                     </label>
+                     <label for="coment" class="forms-item">Комментарий
+                         <textarea name="coment" rows="5" placeholder="Введите текст" id="coment" class="coments"></textarea>
+                     </label>
+                     <label for="agreement" class="agreement-item">
+                         <input type="checkbox" name="agreement" value="agreement" id="agreement" class="agreement" > 
+                         <svg class="agreement-icon"><use href="./images/symbol-defs.svg#icon-iconcheck"></use></svg>
+                          Соглашаюсь с рассылкой и принимаю<a href="" class="agreement-text"> Условия договора </a>
+                     </label>
+                     <label for="button-sumbit" class="button-item">
+                         <button type="submit" class="button-sumbit">Отправить</button>
+                     </label>
                  </form>
             </div>
         </div>
@@ -328,14 +325,15 @@
                 </ul>
             </div>
             <div>
-                <h3 class="heading-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                <label>
-                    <input type="email" name="mail" placeholder="E-mail" class="mail-subscr">
-                </label>
-                <button type="submit" class="button-subscr">Подписаться
-                    <svg class="icons-subscr"><use href="./images/symbol-defs.svg#icon-send"></use></svg>
-                </button>
-                     
+                <form>
+                    <h3 class="heading-footer">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                    <label>
+                        <input type="email" name="mail" placeholder="E-mail" class="mail-subscr">
+                    </label>
+                    <button type="submit" class="button-subscr">Подписаться
+                        <svg class="icons-subscr"><use href="./images/symbol-defs.svg#icon-send"></use></svg>
+                    </button>
+                </form>
             </div>
         </div>
      </footer>
