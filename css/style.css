@@ -683,6 +683,7 @@ p {
 
 .agreement-text {
   color: var(--accent-color);
+  padding-left: 3px;
 }
 .agreement {
   position: absolute;
